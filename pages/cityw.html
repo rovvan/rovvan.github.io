@@ -29,33 +29,19 @@
 			grid-area: header; 
 			padding: 20px;
   			margin: 20px;
+}
 
-			}
-
-			.grid-container {
-  display: grid;
-  grid-template-areas:
+			.grid-container > div {
+  			display: grid;
+  			grid-template-areas:
     'header header header header header header'
     'menu main main main right right'
     'menu footer footer footer footer footer';
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-			.grid-container {
-  			display: inline-grid;
  			grid-template-columns: auto auto auto;
  			background-color: #ffffff;
- 			padding-left: 20px;
+ 			padding: 20px;
  			padding-top:10px;
+ 			text-align: center;
 
  			}
 			
