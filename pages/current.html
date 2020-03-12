@@ -23,9 +23,6 @@
 			margin-right: 750px;
 			padding-top: 200px;}
 
-			.item1 { grid-area: header; }
-			.item3 { grid-area: footer; }
-
 			.grid-container {
   			display: inline-grid;
   			justify-content: space-evenly;
@@ -33,6 +30,9 @@
  			background-color: #ffffff;
  			padding: 10px; 
  			margin-left: 20px;
+
+ 			grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
  			}
 			
 			.grid-item {
