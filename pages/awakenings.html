@@ -43,29 +43,36 @@
   			margin: 20px;
 			}
 
-			.horizontal-scroll-wrapper {
-  			width: 100px;
-  			height: 300px;
-  			overflow-y: auto;
-  			overflow-x: hidden;
-
-  			...
-  			transform: rotate(-90deg);
-  			transform-origin: right top;
-
-  			...
-  			transform:rotate(-90deg) translateY(-100px);
-  			...
-			}
-
-			.horizontal-scroll-wrapper > div {
- 			 width: 100px;
-  			height: 100px;
-
-  			...
-  			transform: rotate(90deg);
-  			transform-origin: right top;
-			}
+			.tabSelector-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: center;
+    line-height: 0;
+}
+.tabSelector {
+    display: inline-block;
+    white-space: nowrap;
+    height: 80px;
+    list-style-type: none;
+    margin: 0;
+}
+.tabSelector li {
+    display: inline-block;
+    white-space: normal;
+    height: 100%;
+}
+.tabSelector a {
+    display: table;
+    height: 100%;
+    color: #959595;
+    padding: 5px 17px 0;
+    font-size: 16px;
+    font-size: 1rem;
+}
+.tabSelector a span {
+    display: table-cell;
+    vertical-align: middle;
+}
 
 		</style>
 	</head>
@@ -79,12 +86,17 @@
 
 	</div>
 
-<div class="horizontal-scroll-wrapper squares">
-  <div>item 1</div>
-  <div>item 2</div>
-  <div>item 3</div>
-
-</div>
+<nav class="tabSelector-wrapper">
+    <ul class="tabSelector">
+        <li><a href="#" class="active"><span>item 1</span></a></li>
+        <li><a href="#"><span>item 2</span></a></li>
+        <li><a href="#"><span>item 3</span></a></li>
+        <li><a href="#"><span>item 4</span></a></li>
+        <li><a href="#"><span>item 5</span></a></li>
+        <li><a href="#"><span>item 6</span></a></li>
+        <li><a href="#"><span>item 7</span></a></li>
+    </ul>
+</nav>
 
 </body>
 <html>
