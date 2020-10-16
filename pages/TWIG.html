@@ -335,6 +335,81 @@ function showSlides(n) {
     
 	</div>
 
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 16</div>
+    <img src="../img/TWopen5.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 16</div>
+  <img src="../img/TWopen3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 16</div>
+  <img src="../img/TWopen7.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 16</div>
+  <img src="../img/TWopen8.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 16</div>
+  <img src="../img/TWopen1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 16</div>
+  <img src="../img/TWopen4.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+    
+  </div>
+
 	<div class="grid-item">
 
 	<p>EXHIBITION TEXT
@@ -429,7 +504,7 @@ Now, bite at the earth with no anger
 <p>* * *</p>
 
 	</div>
-
+ </body>
   <footer>
 <p><b>About the Artists</b>
 
@@ -443,6 +518,5 @@ Now, bite at the earth with no anger
 
 <p><3
   </footer>
-
- </body>
+ 
 <html>
