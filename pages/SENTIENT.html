@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>HEARTH</title>
+	
+		<style>
+			.header {
+				position: fixed;
+				top:0;
+				left:0;
+				width: 100%;
+				overflow: scroll;
+				padding-left: 50px;
+				padding-top: 10px;
+				padding-bottom: 0px;
+				background: #ffffff;
+        z-index: 2;
+			}
+
+			.content {
+				font-size: 16px;
+				padding-left: 40px;
+				margin-right: 50px;
+		    padding-top: 175px;
+			}
+
+      .footer {
+        font-size: 16px;
+        padding-left: 40px;
+        margin-right: 50px;
+      }
+
+			.grid-container {
+  			display: grid;
+ 			grid-template-columns: auto auto;
+ 			background-color: #ffffff;
+ 			padding:auto;
+      z-index: -1;
+
+ 			}
+			
+			.grid-item {
+  			border: 0px solid rgba(0, 0, 0, 1);
+  			border-style: dotted;
+  			font-size: 16px;
+  			text-align: left;
+  			padding: 20px;
+  			margin: 20px;
+			}
+			
+* {box-sizing: border-box}
+body 
+.mySlides {display: none}
+img {vertical-align: middle;}
+{
+  max-width: 700px;
+  position: relative;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 850px;
+  position: relative;
+  z-index: 1;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: ##1f1f1f;
+  font-size: 14px;
+  padding: 12px 12px;
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+		</style>
+
+	</head>
+	
+<body>  
+<div class="header" id="myHeader">
+
+	<p><img src="../img/logo_draft.jpg" height="105" width="130"><p><p>
+		
+	<p><A HREF="../index.html" style="color:black"><b>HEARTH</b></A>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<A HREF="../pages/about.html" style="color:black">ABOUT</A>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<A HREF="../pages/current.html" style="color:black">PROGRAMMING</A>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<A HREF="../pages/cityw.html" style="color:black">MULTIPLES</A>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<A HREF="../pages/orgs.html" style="color:black">SPACE LIST</A></p>
+
+	</div>
+
+<div class="content">
+
+  <p><b>Hop the Twig</b></p>
+    <p> March 6 - April 4, 2020
+    <br> Opening: March 6, 7-10PM
+    <br> Ft. new work by Sara K. Maston, Sami Alwani, Ron Siu, & Shevon J. Lewis<p>
+
+<br>
+
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">13 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">14 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">15 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">16 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">17 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">18 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">19 / 19</div>
+    <img src="../img/" style="width:100%">
+  <div class="text">caption</i></div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<br>
+<br>
+
+	<p><b>Exhibition Text</b> by Benjamin de Boer</p>
+
+<p>
+While the city swells in thaw, please join us in a second circle around the fire. This time, come gaze heavenward while fastened to Earth. Collected here are the material remains of four artists’ work forever burdened by longing - stories of life’s mediation. Responding to Elijah’s dually translated prompt “How long halt ye between two opinions? / Until when are ye hopping from twig to twig?” (1 Kings xviii. 21), the art of Sara K. Maston, Sami Alwani, Ron Siu, and Shevon J. Lewis offers hints along a familiar range of stillness, hesitations, missteps, leaps and rhythms we embody in decision making. 
+
+<p>Traces of their aching are assembled as if from intuition beyond phenomenal appearance and cognition. By working, hope and doubt fuse as struggle rooted in responsibility. These expressions are accomplished without banking on intent and settling for responses pulled from history’s inventory. Rather, our artists’ experimental faith is concerned with the consequences of actions - world building for the eternal destiny of the soul. 
+
+<p>These works are lyrical, and in this imaginative moment they become prophetic. The serious play of creative expression demonstrates a primordial kinship with the exigency of  foretelling. Instead of only accommodating the mechanics of what has been - and in so defining potential identity and collectivity - these pleas enunciate hope in the folds of moments still to come by force of interruption. Their songs are not blueprints from which to build, but future’s filaments smuggled into the present. Here, we do the future together.
+
+</div>
+
+<div class="grid-container">
+
+<div class="grid-item">
+<p style="text-align:left"><b><i>Saturn Roots Ramble in a Wandering Way</i> 
+<br>for Sara</b>
+
+<p style="text-align:left">Snowfall soul is the swerve of the body, so spiral<br>
+your winging double without the two halves born twins<br> 
+a shadow copy of one another clenched too quick & the quickest<br>
+dead. You taught me a hole dug last year eats its backfill in trash,<br> 
+dumb eyes watch it all happen, there is earlier time for rosyness between<br>
+truth even today when your silence beat the first I uncorked under<br>
+a week’s roygbiv arc. Old stars buried in their pool burn in the mantle <br>
+We are specks tenseless. Slug heartstrings tied a shoe tree pegged out some <br>
+county road, cars sound hard yet stay organized. I hate this lattice, grew to<br> 
+I fold in far too close, parched & forgot water foolish so the bucket<br>
+is dropped down in some factorial tide. To my senses I write all possible <br>
+permutations my soiled clues nothing against a swamp’s long ripples.<br> 
+Waves go hungry today, Sun shoreline an augured limb of heavy pores<br> 
+Tonight the stars draw a circle for you 
+
+</div>
+<div class="grid-item">
+
+<p style="text-align:left"><b><i>Mercury Roots Abide Deep Beneath</i>
+<br>for Sami</b>
+
+<p style="text-align:left">Does this event belong to a situation? Uncertainty we worked for<br>
+Barely underhand, some pleasures jump past threshold & leap to release <br>
+dumb immediate rotten joy. Heaps ‘n nothing except brothers remembered<br>
+in circular motion: making sure of and best of both. New riches sprout but<br>
+‘I wish I could believe that’ is cowardly, some pleasant spectator once faceless<br>
+body now sprouting the pale disease of a season’s floral arrangement<br>
+Instead,  daisy chains in autumn woozy gravity, picked sharing love as relations<br>
+That will not grow watery, Gun Oil® spread over wide planes clings just as fierce<br> 
+All hands cup security and success an image of splendour a-go-go abcd all the above<br>
+in the heart. Questionable substance? According to who? Nobody can know<br> 
+but you till carbonated haze wears off to responses modded on another’s behalf<br> 
+who will be with us as they might be with us? Unwound over phone kinks never iron<br> out so champion your embrace; the call for enduring that spurt thrice removed<br>
+The link is what we do, the knot is who we are
+
+</div>
+<div class="grid-item">
+
+<p style="text-align:left"><b><i>Venus Roots Burst Fast So Quickly and Freely</i>
+<br>for Ron</b>
+
+<p style="text-align:left">Peachpit drift of synthetic horns sound sombre,<br>
+study hall chordage through a heart’s spit interface<br> 
+Playmate smell dipped into grains where space greets work<br>
+Memory box, memory box who’s corners hairpin in paste<br>
+to crumple up at edges of flatlined situationships yelled<br>
+That glance from you was all it took all it ever takes<br> 
+to make my mind shake wild with mire - place pushes<br> 
+back, a curve’s blush is the eye’s way of saying I love you back<br>
+He watches your own span grabbing pressed flower camo<br>  
+That’s your impression, light-dark,  fading unresolved until<br>
+I rest against that wall again, a brain bouquet so thorny<br>
+Traces where your plays mucous ruckus long the spark<br> 
+twostep to the second name of being, being still<br>
+Sleep will come back & wager a name more secret
+
+</div>
+<div class="grid-item">
+
+<p style="text-align:left"><b><i>Mars Roots Strand Highly Fibrous and Creep Long </i>
+<br>for Shevon</b>
+
+<p style="text-align:left">Float or tunnel a toe deed made to copy the everlasting outside yourself<br>
+Look above! Torn from a diary hung an image that changed by the minute. <br>
+Sometimes an umbrella from below then an eagle with splayed wings so nameless <br>
+just over the horizon, shifts into wisps most resembling a nightgown but less than  <br>   
+blown up by a gentle breeze. Something like that makes you quiet & you understand<br>
+how someone could see a wheel spin high in the middle of the sky, thirteenth<br>
+sheet frantically split in part to reject light’s opening. Almost all creatures seen <br>
+Are heard or smelled first, still we blame the water on top for being warmed by the sun<br>
+Nine trees amber while worming to dew. Treasures unearthed trace around the moon<br> so froze a hiccup,  caring but send few thunder so we vomit our fallout<br>     
+hacking without riverbed door we fool the fish, flying hands chase pardons bump<br>
+oneanother & fantasy noggin pushes hooks to lance a tingling sky patch split <br>    
+cursed grow two buckets of dry seed & gnaw at our host, look vain slap <br>
+Now, bite at the earth with no anger
+
+	</div>
+
+</div>
+
+ <div class="footer">
+  <p><b>About the Artists</b>
+
+  <p>Sara K. Maston <br>is an interdisciplinary artist exploring the vantage points of animals such as insects, single-celled organisms, domestic horses, birds and rodents. Her work takes the form of ceramics, paintings, and textile installations to articulate parallel lifeworlds that are indicative of a distant ancestor’s sense of physicality or distinct rhythm of nature.  Maston holds an MFA from York University and is pursuing a degree in Information Science at the University of Toronto to develop methods of archiving and mediating ephemeral nonhuman animal knowledge. 
+
+  <p>Sami Alwani <br>is a cartoonist and illustrator based in Toronto. His work has appeared in Best American Comics, on Vice and he received a Doug Wright Award in 2018. His first collection of Stories will be published with Conundrum Press in May 2021. 
+
+  <p>Ron Siu <br>is an artist currently based in Toronto. He graduated with his BFA in Drawing & Painting at OCAD University in 2019. His practice primarily involves painting, print, and mixed media approaches. Siu examines a wide range of influences, from decorative art history to gay-themed Japanese graphic romance novels, as a means to express a contemporary sense of Romanticism and Queer desire. Siu’s work has been exhibited across Canada and in Glasgow, Scotland. He was most recently one of the selected artists to participate in Centre 3’s Emerging Artist Residency program in Hamilton. 
+
+  <p>Shevon Lewis <br>is a Toronto based oil painter. Born in Colombo, Sri Lanka, Shevon immigrated to Canada at a young age. He uses a traditional visual framework to subversively reflect on society today. Shevon is currently a teaching assistant at OCADU within the illustration program teaching students observational drawing methods. Shevon graduated OCADU with a BDes from the Illustration program in 2018 and has shown work at gallery 156 in Kensington market, Art Metropole, and various shows connected to OCADU.
+
+<p><3
+  <br>
+  <br>
+  <br>
+ </div>
+</body>
+
+<html>
