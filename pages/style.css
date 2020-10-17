@@ -15,7 +15,7 @@
 
 .content {
 		font-size: 16px;
-		padding-left: 40px;
+		margin-left: 40px;
 		margin-right: 50px;
 		padding-top: 175px;
 		}
@@ -23,7 +23,7 @@
 
 .footer {
         font-size: 16px;
-        padding-left: 40px;
+        margin-left: 40px;
         margin-right: 50px;
       	}
 
@@ -31,6 +31,7 @@
   		display: grid;
  		grid-template-columns: auto auto;
  		background-color: #ffffff;
+    margin: 0px 50px 50px 50px;
  		padding:auto;
       	z-index: -1;
       	}
