@@ -5,48 +5,45 @@
 		top:0;
 		left:0;
 		width: 100%;
-				overflow: scroll;
-				padding-left: 50px;
-				padding-top: 10px;
-				padding-bottom: 0px;
-				background: #ffffff;
-				z-index: 2;
-			}
+		overflow: scroll;
+		padding-left: 50px;
+		padding-top: 10px;
+		padding-bottom: 0px;
+		background: #ffffff;
+		z-index: 2;
+		}
 
-			.content {
-				font-size: 16px;
-				padding-left: 40px;
-				margin-right: 50px;
-		    padding-top: 175px;
-			}
+.content {
+		font-size: 16px;
+		padding-left: 40px;
+		margin-right: 50px;
+		padding-top: 175px;
+		}
 
 
-      .footer {
+.footer {
         font-size: 16px;
         padding-left: 40px;
         margin-right: 50px;
-      }
+      	}
 
-			.grid-container {
-  			display: grid;
- 			grid-template-columns: auto auto;
- 			background-color: #ffffff;
- 			padding:auto;
-      		z-index: -1;
-
- 			}
+.grid-container {
+  		display: grid;
+ 		grid-template-columns: auto auto;
+ 		background-color: #ffffff;
+ 		padding:auto;
+      	z-index: -1;
+      	}
 			
 			
-			.grid-item {
-  			border: 0px solid rgba(0, 0, 0, 1);
-  			border-style: dotted;
-  			font-size: 16px;
-  			text-align: left;
-  			padding: 20px;
-  			margin: 20px;
-			}
-
-			
+.grid-item {
+  		border: 0px solid rgba(0, 0, 0, 1);
+  		border-style: dotted;
+  		font-size: 16px;
+  		text-align: left;
+  		padding: 20px;
+  		margin: 20px;
+		}	
 		
 /* CODE TO DEFINE IMAGE SLIDESHOWS ON EXHIBITION PAGES */	
 * {box-sizing: border-box}
