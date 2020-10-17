@@ -15,7 +15,7 @@
 
 .content {
 		font-size: 16px;
-		padding-left: 40px;
+		margin-left: 40px;
 		margin-right: 50px;
 		padding-top: 175px;
 		}
@@ -23,7 +23,7 @@
 
 .footer {
         font-size: 16px;
-        padding-left: 40px;
+        margin-left: 40px;
         margin-right: 50px;
       	}
 
