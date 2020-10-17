@@ -31,7 +31,7 @@
   		display: grid;
  		grid-template-columns: auto auto auto;
  		background-color: #ffffff;
- 		padding:auto;
+   padding-left: 40px;
       	z-index: -1;
       	}
 			
@@ -39,8 +39,8 @@
 .grid-item {
   		font-size: 16px;
   		text-align: center;
-  		padding: 20px;
-  		margin: auto;
+  		padding: 0px;
+  		margin: 20px;
 		}	
 		
 /* CODE TO DEFINE IMAGE SLIDESHOWS ON EXHIBITION PAGES */	
