@@ -31,7 +31,6 @@
   		display: inline-grid;
  		grid-template-columns: auto auto;
  		background-color: #ffffff;
-    margin: 0px 50px 50px 50px;
  		padding:auto;
       	z-index: -1;
       	}
@@ -40,8 +39,8 @@
 .grid-item {
   		font-size: 16px;
   		text-align: left;
-  		padding: 20px;
-  		margin: 20px;
+      margin-left: 40px;
+      margin-right: 40px;
 		}	
 		
 /* CODE TO DEFINE IMAGE SLIDESHOWS ON EXHIBITION PAGES */	
