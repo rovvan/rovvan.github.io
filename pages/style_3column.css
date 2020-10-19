@@ -40,8 +40,8 @@
 .grid-item {
   		font-size: 16px;
   		text-align: center;
-  		padding: 0px;
-  		margin: 0px;
+  		margin-left: 40px;
+      margin-right: 40px;
 		}	
 		
 /* CODE TO DEFINE IMAGE SLIDESHOWS ON EXHIBITION PAGES */	
