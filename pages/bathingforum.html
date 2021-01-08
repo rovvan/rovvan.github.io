@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>HEARTH</title>
+	<!--link to a stylesheeet-->
+    <link rel="stylesheet" href="style.css">
+
+	</head>
+	
+<body>  
+<div class="header" id="myHeader">
+
+  <p><img src="../img/logo_draft.jpg" height="105" width="130"><p><p>
+    
+  <p><A HREF="../index.html" style="color:black"><b>HEARTH</b></A>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<A HREF="../pages/about.html" style="color:black">ABOUT</A>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<A HREF="../pages/current.html" style="color:black">PROGRAMMING</A>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<A HREF="../pages/cityw.html" style="color:black">MULTIPLES</A>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<A HREF="../pages/orgs.html" style="color:black">SPACE LIST</A></p>
+
+  </div>
+
+<div class="content">
+
+  <p><b>Bathing Forum</b></p>
+    <p> September 19th - October 24th, 2020
+    <br> Ft. works by Xuan Ye, Nathan Ivanco, Marvin Luvualu António, and Paula McLean
+    <br> Curated by Sameen Mahboubi and Benjamin de Boer<p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eheBLT7WNtk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 15</div>
+    <img src="../img/Stem Stuck/stem1.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 15</div>
+     <img src="../img/Stem Stuck/stem2.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 15</div>
+     <img src="../img/Stem Stuck/stem3.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 15</div>
+     <img src="../img/Stem Stuck/stem4.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 15</div>
+     <img src="../img/Stem Stuck/stem5.jpg" style="width:100%">
+ <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 15</div>
+    <img src="../img/Stem Stuck/stem6.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 15</div>
+     <img src="../img/Stem Stuck/stem7.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 15</div>
+   <img src="../img/Stem Stuck/stem8.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 15</div>
+     <img src="../img/Stem Stuck/stem9.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 15</div>
+     <img src="../img/Stem Stuck/stem10.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 15</div>
+     <img src="../img/Stem Stuck/stem11.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 15</div>
+    <img src="../img/Stem Stuck/stem12.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">13 / 15</div>
+     <img src="../img/Stem Stuck/stem13.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">14 / 15</div>
+     <img src="../img/Stem Stuck/stem14.jpg" style="width:100%">
+ <div class="text"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">15 / 15</div>
+     <img src="../img/Stem Stuck/stem15.jpg" style="width:100%">
+  <div class="text"></i></div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</div>
+
+ <div class="footer">
+  <p><b></b>
+
+<p><3
+  <br>
+  <br>
+  <br>
+ </div>
+</body>
+
+<html>
