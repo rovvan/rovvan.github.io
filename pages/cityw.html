@@ -7,46 +7,168 @@
 	
 		 <link rel="stylesheet" href="style_3column.css">
 
-<!-- CSS Code: Place this code in the document's head (between the 'head' tags) -->
+<!-- All Univerity of Nebraska-Lincoln Web Framework code is the property of UComm/ITS Digital Experience Group 
+and the UNL Web Developer Network. -->
+
+<!-- place the contents of this css file, in the <head></head> of your html page when using 
+the responsive table generator code on sites not in UNLcms or the UNL.edu framework -->
+
 <style>
-/* DivTable.com */
-.divTable{
-	display: table;
-	width: 100%;
-	padding: 40px;
-	text-align: center;
-}
-.divTableRow {
-	display: table-row;
-}
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-}
-.divTableCell, .divTableHead {
-	border: 1px dotted #999999;
-	display: table-cell;
-	padding: 20px;
-}
-
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-}
-.divTableFoot {
-	background-color: #EEE;
-	display: table-footer-group;
-}
-.divTableBody {
-	display: table-row-group;
-}
-
-		 	.grid-item {
-  			border: 1px solid rgba(0, 0, 0, 1);
-  			border-style: dotted;
-  			padding: 20px;
 
 
+:root {
+    --bg-table-stripe: #f6f6f5;
+    --b-table: #e3e3e2;
+    --caption: #242423;
+}
+
+table {
+    background-color: transparent;
+    border-collapse:collapse;
+  	font-family: Arial, Helvetica, sans-serif
+}
+
+th {
+    text-align:left
+}
+
+.dcf-txt-center {
+      text-align: center!important
+    }
+
+    .dcf-txt-left {
+      text-align: left!important
+    }
+
+    .dcf-txt-right {
+      text-align: right!important
+    }
+    
+.dcf-table caption {
+      color: var(--caption);
+      font-size: 1.13em;
+      font-weight: 700;
+      padding-bottom: .56rem
+    }
+
+    .dcf-table thead {
+      font-size: .84em
+    }
+
+    .dcf-table tbody {
+      border-bottom: 1px solid var(--b-table);
+      border-top: 1px solid var(--b-table);
+      font-size: .84em
+    }
+
+    .dcf-table tfoot {
+      font-size: .84em
+    }
+
+    .dcf-table td, .dcf-table th {
+      padding-right: 1.78em
+    }
+
+    .dcf-table-bordered, .dcf-table-bordered td, .dcf-table-bordered th {
+      border: 1px solid var(--b-table)
+    }
+
+    .dcf-table-bordered td, .dcf-table-bordered th, .dcf-table-striped td, .dcf-table-striped th {
+      padding-left: 1em;
+      padding-right: 1em
+    }
+
+    .dcf-table-bordered tr:not(:last-child), .dcf-table-striped tr:not(:last-child) {
+      border-bottom: 1px solid var(--b-table)
+    }
+
+    .dcf-table-striped tbody tr:nth-of-type(2n) {
+      background-color: var(--bg-table-stripe)
+    }
+
+    .dcf-table thead td, .dcf-table thead th {
+      padding-bottom: .75em;
+      vertical-align: bottom
+    }
+
+    .dcf-table tbody td, .dcf-table tbody th, .dcf-table tfoot td, .dcf-table tfoot th {
+      padding-top: .75em;
+      vertical-align: top
+    }
+
+    .dcf-table tbody td, .dcf-table tbody th {
+      padding-bottom: .75em
+    }
+
+    .dcf-table-bordered thead th {
+      padding-top: 1.33em
+    }
+
+    .dcf-wrapper-table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      left: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      padding-bottom: 1em;
+      position: relative;
+      right: 50%;
+      width: 100vw
+    }
+
+    @media only screen and (max-width:42.09em) {
+      .dcf-table-responsive thead {
+        clip: rect(0 0 0 0);
+        -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap
+      }
+      .dcf-table-responsive tr {
+        display: block
+      }
+      .dcf-table-responsive td {
+        -webkit-column-gap: 3.16vw;
+        -moz-column-gap: 3.16vw;
+        column-gap: 3.16vw;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        text-align: left!important
+      }
+      .dcf-table-responsive.dcf-table-bordered, .dcf-table-responsive.dcf-table-bordered thead th {
+        border-width: 0
+      }
+      .dcf-table-responsive.dcf-table-bordered tbody td {
+        border-top-width: 0
+      }
+      .dcf-table-responsive:not(.dcf-table-bordered) tbody tr {
+        padding-bottom: .75em
+      }
+      .dcf-table-responsive:not(.dcf-table-bordered) tbody td {
+        padding-bottom: 0
+      }
+      .dcf-table-responsive:not(.dcf-table-bordered):not(.dcf-table-striped) tbody td {
+        padding-right: 0
+      }
+      .dcf-table-responsive.dcf-table-bordered tbody tr:last-child td:last-child {
+        border-bottom-width: 0
+      }
+      .dcf-table-responsive tbody td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: 700;
+        padding-right: 1.78em
+      }
+    }
+
+.dcf-overflow-x-auto {
+      overflow-x: auto!important;
+      -webkit-overflow-scrolling: touch
+    }
+    
 </style>
 	</head>
 	
@@ -63,85 +185,86 @@
 	<p>To purchase multiples, get in touch at hearthgarage@gmail.com or DM us at @hearth.garage. Payment can be sent via e-transfer to hearthgarage@gmail.com. Local pick up can be coordinated in Toronto to avoid shipping fees.
 </div>
 
-<!--table thing-->
-<div class="divTable">
-<div class="divTableBody">
+<!--new table--->
+<table class="dcf-table dcf-table-responsive dcf-table-bordered">
+	<tbody>
+		<tr>
+			<td class="dcf-txt-center">HEARTH005</td>
+			<td class="dcf-txt-center">img city water yan cody</td>
+			<td>City Water Broadside Winter 2021
+Shadow Land Acknowledgment 
+Cody Caetano x Yan Wen Chang ⁣
 
-<div class="divTableRow">
-	<div class="divTableCell">&nbsp;HEARTH005</div>
-	
-	<div class="divTableCell"><strong>&nbsp;<img src="../img/SLA_6.jpg" style="width:40%;"></strong></div>
-	
-	<div class="divTableCell">
-		<span style="vertical-align: top;">
-		<p> <strong>City Water Broadside&nbsp;Winter 2021</strong><br /><em>Shadow Land Acknowledgment</em> <br />Cody Caetano x Yan Wen Chang ⁣</p>
-		<p>"The idea and conceptual site of the Shadow Land comes from writer and traditional teacher Lee Maracle (Sto:lo), who in the past has taught it as &ldquo;the space between the living and the dead where terrible things can be looked at.&rdquo; ⁣ ⁣</p>
-		<p>In &ldquo;Shadow Land Acknowledgement,&rdquo; Yan Wen Chang and Cody Caetano torque a political genre to confront the myopia and cognitive dissonance of the city&rsquo;s political shakers. ⁣⁣ ⁣</p>
-		<p>B&amp;W prints of this edition are available for free/by donation, while the edition of 20 originals is for sale for $45 each. For inquiries please contact hearthgarage@gmail.com. All proceeds from this broadside will go to Encampment Support Network Toronto. ⁣</p></span>
-</div>
-</div>
+&quot;The idea and conceptual site of the Shadow Land comes from writer and traditional teacher Lee Maracle (Sto:lo), who in the past has taught it as “the space between the living and the dead where terrible things can be looked at.” ⁣ ⁣
 
-<div class="divTableRow">
-	<div class="divTableCell">&nbsp;HEARTH004</div>
-	
-	<div class="divTableCell">&nbsp;<img src="../img/moonshow_pub2.JPG" height="400" width="400"></div>
-	
-	<div class="divTableCell"><strong><strong>Moonshow Publication</strong></strong>
-		<p>Our latest publication features a collection of poetry and prose along the themes of dreams, night, and moonlit experiences by Alexia, Benjamin de Boer, Forest Hope, Jennifer Laiwint, Keivan Mahboubi, and Blair Swann.<span class="Apple-converted-space">&nbsp;</span></p>
-		<p>Produced with the exhibition Moonshow, a collaborative project by Hearth and the plumb, they are available for 15$ (plus 1.50$ shipping if applicable~)</p>
-</div>
-</div>
+In “Shadow Land Acknowledgement,” Yan Wen Chang and Cody Caetano torque a political genre to confront the myopia and cognitive dissonance of the city’s political shakers. ⁣⁣ ⁣
 
-<div class="divTableRow">
-	<div class="divTableCell">&nbsp;HEARTH003</div>
-	
-	<div class="divTableCell">&nbsp;<img src="../img/silverfish_pub.jpg" height="400" width="400">
-	</div>
-	
-	<div class="divTableCell"><strong>&nbsp;Silverfish Issue 001 Cyborgities [SOLD OUT]</strong>
-		<p><A HREF="https://silverfish.digital" style="color:black">Silverfish Issue 001 Cyborgities</A></span>
-		<p>ft. work by Jessica Kasiama, Alex Lepianka, Miao Liu, and B Wijshijer
+B&amp;W prints of this edition are available for free/by donation, while the edition of 20 originals is for sale for $45 each. For inquiries please contact hearthgarage@gmail.com. All proceeds from this broadside will go to Encampment Support Network Toronto. </td>
+		</tr>
+		<tr>
+			<td class="dcf-txt-center">HEARTH004</td>
+			<td class="dcf-txt-center">img moonshow</td>
+			<td>Moonshow Publication
+Our latest publication features a collection of poetry and prose along the themes of dreams, night, and moonlit experiences by Alexia, Benjamin de Boer, Forest Hope, Jennifer Laiwint, Keivan Mahboubi, and Blair Swann. 
 
-</div>
-</div>
+Produced with the exhibition Moonshow, a collaborative project by Hearth and the plumb, they are available for 15$ (plus 1.50$ shipping if applicable~)</td>
+		</tr>
+		<tr>
+			<td>HEARTH003</td>
+			<td>img silverfish</td>
+			<td>Silverfish Issue 001 Cyborgities [SOLD OUT]
+Silverfish Issue 001 Cyborgities
 
-<div class="divTableRow">
-	<div class="divTableCell">&nbsp;HEARTH002</div>
-	
-	<div class="divTableCell">&nbsp;<img src="../img/hearth002.jpg" height="400" width="400"></div>
-	<div class="divTableCell">
-		<p><strong>HEARTH002: Sound Diary Cassette</strong> <br /><br />Produced in conjunction with the exhibition <a href="http://hearthgarage.com/pages/STEM.html"><br />stem to where we grew stuck</a></p>
-		<p>$10/PWYC <br />Proceeds will be donated to the Jane Finch Housing Coalition.</p>
-</div>
-</div>
+ft. work by Jessica Kasiama, Alex Lepianka, Miao Liu, and B Wijshijer</td>
+		</tr>
+		<tr>
+			<td>HEARTH002</td>
+			<td>img stem</td>
+			<td>HEARTH002: Sound Diary Cassette 
 
-<div class="divTableRow">
-	<div class="divTableCell">&nbsp;HEARTH001</div>
-	<div class="divTableCell">&nbsp;<img src="../img/Sentient Sun/promo-booklet.jpg" height="400" width="400">
-		<img src="../img/Sentient Sun/promo-booklet2.jpg" height="400" width="400"></div>
-	<div class="divTableCell">
-		<p><strong>Sentient Sun</strong>&nbsp;<strong>Publication</strong><br />Produced in conjunction with the exhibition <a href="http://hearthgarage.com/pages/SENTIENT.html"><br />Sentient Sun</a> <br /><br />Featuring 40 pages of writing and work by: ⁣ ⁣</p>
-		<p>Marina Fathalla⁣ <br />Lamis Haggag⁣ <br />Emily Harrison⁣ <br />Lauren Lavery⁣ <br />Rowan Lynch⁣ <br />Philip Leonard Ocampo⁣ <br />Mehrnaz Rohbakhsh⁣ <br />and Geneviève Wallen⁣</p>
-		<p>10$/PWYC, plus $1.50 shipping <br />Available on either cream or yellow paper, please indicate whether you would like your copy to be yellow or cream.⁣ <br />Note: the first round of orders will be shipped/delivered in mid November!</p>
-</div>
-</div>
-<div class="divTableRow">
+Produced in conjunction with the exhibition 
+stem to where we grew stuck
 
-	<div class="divTableCell">&nbsp;HEARTH000</div>
+$10/PWYC 
+Proceeds will be donated to the Jane Finch Housing Coalition.</td>
+		</tr>
+		<tr>
+			<td>HEARTH001</td>
+			<td>img sentient</td>
+			<td>Sentient Sun Publication
+Produced in conjunction with the exhibition 
+Sentient Sun 
 
-	<div class="divTableCell">&nbsp;<img src="../img/broadside1.jpg" height="400" width="400">
-	<img src="../img/broadside2.jpg" height="400" width="400"></div>
-	
-	<div class="divTableCell">
-		<p><strong>City Water Broadside Fall 2019 [SOLD OUT]</strong></p>
-		<p>Fan Wu x Francisco-Fernando Granados</p>
-		<p>City Water is a broadside series that changes with the seasons, featuring artist-writer pairs in collaboration. <br/></p>
-		<p>For remaining copies, contact<a href="https://knifeforkbook.com/"><br />Knife Fork Books</a> or <a href="https://artmetropole.com/shop/14478">Art Metropole</a>.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- DivTable.com -->
+Featuring 40 pages of writing and work by: ⁣ ⁣
+
+Marina Fathalla⁣ 
+Lamis Haggag⁣ 
+Emily Harrison⁣ 
+Lauren Lavery⁣ 
+Rowan Lynch⁣ 
+Philip Leonard Ocampo⁣ 
+Mehrnaz Rohbakhsh⁣ 
+and Geneviève Wallen⁣
+
+10$/PWYC, plus $1.50 shipping 
+Available on either cream or yellow paper, please indicate whether you would like your copy to be yellow or cream.⁣ </td>
+		</tr>
+		<tr>
+			<td>HEARTH000</td>
+			<td>img city water 1</td>
+			<td>City Water Broadside Fall 2019 [SOLD OUT]
+
+Fan Wu x Francisco-Fernando Granados
+
+City Water is a broadside series that changes with the seasons, featuring artist-writer pairs in collaboration. 
+
+For remaining copies, contact
+Knife Fork Books or Art Metropole.</td>
+		</tr>
+	</tbody>
+</table>
+
+
 
 
 </body>
